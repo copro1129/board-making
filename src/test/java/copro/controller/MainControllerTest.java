@@ -1,7 +1,8 @@
-package copro.projectboard.controller;
+package copro.controller;
 
 
 import copro.projectboard.config.SecurityConfig;
+import copro.projectboard.controller.MainController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
