@@ -1,4 +1,4 @@
-package copro.projectboard.repository.controller;
+package copro.controller;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;

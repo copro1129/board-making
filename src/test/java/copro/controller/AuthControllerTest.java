@@ -1,4 +1,4 @@
-package copro.projectboard.controller;
+package copro.controller;
 
 import copro.projectboard.config.SecurityConfig;
 import org.junit.jupiter.api.DisplayName;

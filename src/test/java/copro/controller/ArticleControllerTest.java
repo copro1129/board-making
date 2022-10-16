@@ -1,6 +1,7 @@
-package copro.projectboard.controller;
+package copro.controller;
 
 import copro.projectboard.config.SecurityConfig;
+import copro.projectboard.controller.ArticleController;
 import copro.projectboard.dto.ArticleWithCommentsDto;
 import copro.projectboard.dto.UserAccountDto;
 import copro.projectboard.service.ArticleService;
