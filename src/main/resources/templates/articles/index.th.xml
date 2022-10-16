@@ -1,8 +1,7 @@
 <?xml version="1.0"?>
 <thlogic>
-    <attr sel="#header" th:replace="header :: header"/>
-    <attr sel="#footer" th:replace="footer :: footer"/>
-
+    <attr sel="#header" th:replace="header :: header" />
+    <attr sel="#footer" th:replace="footer :: footer" />
 
     <attr sel="#article-table">
         <attr sel="tbody" th:remove="all-but-first">
@@ -14,26 +13,4 @@
             </attr>
         </attr>
     </attr>
-
-</attr>
-
-<attr sel="#pagination">
-<attr sel="li[0]/a"
-      th:text="'previous'"
-      th:href="@{/articles(page=${articles.number - 1})}"
-      th:class="'page-link' + (${articles.number} <= 0 ? ' disabled' : '')"
-/>
-<attr sel="li[1]" th:class="page-item" th:each="pageNumber : ${paginationBarNumbers}">
-    <attr sel="a"
-          th:text="${pageNumber + 1}"
-          th:href="@{/articles(page=${pageNumber})}"
-          th:class="'page-link' + (${pageNumber} == ${articles.number} ? ' disabled' : '')"
-    />
-</attr>
-<attr sel="li[2]/a"
-      th:text="'next'"
-      th:href="@{/articles(page=${articles.number + 1})}"
-      th:class="'page-link' + (${articles.number} >= ${articles.totalPages - 1} ? ' disabled' : '')"
-/>
-</attr>
 </thlogic>
